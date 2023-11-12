@@ -1,7 +1,7 @@
 import React from 'react';
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
 
-const App = () => (
+const Kedua = () => (
   <View style={[styles.container, styles.horizontal]}>
     <ActivityIndicator />
     <ActivityIndicator size="large" />
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Kedua;

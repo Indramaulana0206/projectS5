@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Text, StyleSheet} from 'react-native';
 
-const about = () => {
+const About = () => {
   const [titleText, setTitleText] = useState("Bird's Nest");
   const bodyText = 'This is not really a bird nest.';
 
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default about;
+export default About;
