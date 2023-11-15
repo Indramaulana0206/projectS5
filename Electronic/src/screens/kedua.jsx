@@ -1,25 +1,34 @@
-import React from 'react';
-import {ActivityIndicator, StyleSheet, View} from 'react-native';
+// Pencarian.js
 
-const Kedua = () => (
-  <View style={[styles.container, styles.horizontal]}>
-    <ActivityIndicator />
-    <ActivityIndicator size="large" />
-    <ActivityIndicator size="small" color="#0000ff" />
-    <ActivityIndicator size="large" color="#00ff00" />
-  </View>
-);
+import React, { useState } from 'react';
+import { SearchBar } from 'react-native-elements';
+import { View, Text } from 'react-native';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-  horizontal: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    padding: 10,
-  },
-});
+const Kedua = () => {
+  const [searchText, setSearchText] = useState('');
+
+  const updateSearch = (text) => {
+    setSearchText(text);
+    // Implement logic untuk memproses pencarian di sini
+  };
+
+  return (
+      <View style={{backgroundColor:'brown',height:100}}>
+        <SearchBar
+          placeholder="Cari..."
+          onChangeText={updateSearch}
+          value={searchText}
+        />
+        <Text style={{ color: 'black'}}>Hasil Pencarian: {searchText}</Text>
+        {/* Tambahkan logika untuk menampilkan hasil pencarian di sini */
+        <View style={{marginTop:20}}>
+          <Text>cofee</Text>
+        </View>
+        }
+      </View>
+
+
+  );
+};
 
 export default Kedua;

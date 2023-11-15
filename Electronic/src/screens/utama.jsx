@@ -20,8 +20,8 @@ const Utama = () => {
               <View>
                 <Text style={{ fontSize: 10, marginLeft: 4, marginRight: 3, color: 'black' }}>enak diminum waktu panas hari</Text>
               </View>
-              <View style={{ backgroundColor: 'orange', marginLeft: 100, width: 30 }}>
-                <Text style={{ color: 'black', fontSize: 20 }}>10k</Text>
+              <View style={{ backgroundColor: 'orange', marginLeft: 100, width: 30 ,borderRadius:5,marginTop:-2}}>
+                <Text style={{ color: 'black', fontSize: 20,marginTop:2}}>10k</Text>
               </View>
             </View>
           </TouchableOpacity>
@@ -38,7 +38,7 @@ const Utama = () => {
               <View>
                 <Text style={{ fontSize: 10, marginLeft: 7, marginRight: 5, color: 'black' }}>enak diminum saat cuaca dingin</Text>
               </View>
-              <View style={{ backgroundColor: 'orange', marginLeft: 110, width: 27 }}>
+              <View style={{ backgroundColor: 'orange', marginLeft: 110, width: 27,borderRadius:5 }}>
                 <Text style={{ color: 'black', fontSize: 20, marginLeft: 4 }}>7k</Text>
               </View>
             </View>

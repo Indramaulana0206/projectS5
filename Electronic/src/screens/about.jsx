@@ -1,34 +1,21 @@
-import React, {useState} from 'react';
-import {Text, StyleSheet} from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native'
+import React from 'react'
 
 const About = () => {
-  const [titleText, setTitleText] = useState("Bird's Nest");
-  const bodyText = 'This is not really a bird nest.';
-
-  const onPressTitle = () => {
-    setTitleText("Bird's Nest [pressed]");
-  };
-
   return (
-    <Text style={styles.baseText}>
-      <Text style={styles.titleText} onPress={onPressTitle}>
-        {titleText}
-        {'\n'}
-        {'\n'}
-      </Text>
-      <Text numberOfLines={5}>{bodyText}</Text>
-    </Text>
-  );
-};
+    <View style={styles.container}>
+      <View style={{ flexDirection:'row', backgroundColor: 'orange', height: 100,marginTop:10}}>
+        <Image source={require("../screens/Image/user.png")} style={{ width: 50, height: 50, borderRadius: 75, marginTop:15}} />
+        <Text style={{ color: 'black', fontSize: 24, fontWeight: "bold",marginTop:35,marginLeft:15 }}>Sriwahyuni</Text>
+      </View>
+      <View>
+        <Text>BIO</Text>
+      </View>
+    </View>
 
-const styles = StyleSheet.create({
-  baseText: {
-    fontFamily: 'Cochin',
-  },
-  titleText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});
+  )
+}
 
-export default About;
+export default About
+
+const styles = StyleSheet.create({})
