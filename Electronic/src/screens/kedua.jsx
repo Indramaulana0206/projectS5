@@ -21,7 +21,7 @@ const Kedua = () => {
         />
         <Text style={{ color: 'black'}}>Hasil Pencarian: {searchText}</Text>
         {/* Tambahkan logika untuk menampilkan hasil pencarian di sini */
-        <View style={{marginTop:20}}>
+        <View style={{marginTop:20,}}>
           <Text>cofee</Text>
         </View>
         }
